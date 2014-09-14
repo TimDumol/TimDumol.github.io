@@ -1,0 +1,26 @@
+.button.button--social {
+  $size: rem-calc(32);
+  $padding: rem-calc(5);
+  $shrunk: $size - 2*$padding;
+  width: $size;
+  height: $size;
+  font-size: $shrunk;
+  padding: $padding;
+}
+
+.personal-info {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  list-style-type: none;
+  margin: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.self-photo {
+  width: 100%;
+  max-width: 160px;
+  display: block;
+}

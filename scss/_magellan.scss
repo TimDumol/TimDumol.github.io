@@ -1,0 +1,13 @@
+[data-magellan-expedition] {
+  background: none;
+  min-width: 0;
+  @media #{$small-only} {
+    &.fixed {
+      display: none;
+    }
+  }
+}
+
+[data-magellan-expedition-clone] {
+  display: none;
+}

@@ -1,0 +1,13 @@
+.activity-list {
+  list-style-type: none;
+  line-height: 1.2;
+  margin: 0;
+
+  > li {
+    @extend .panel;
+  }
+
+  .date {
+    @extend em;
+  }
+}
