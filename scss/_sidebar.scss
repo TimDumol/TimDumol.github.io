@@ -24,3 +24,21 @@
   max-width: 160px;
   display: block;
 }
+
+.side-nav {
+  li a:not(.button) {
+    padding: rem-calc(5);
+    @include display(flex);
+    @include align-items(center);
+  }
+  i.fa {
+    font-size: rem-calc(14);
+    display: block;
+    width: rem-calc(14);
+  }
+  div {
+    display: block;
+    margin-left: rem-calc(10);
+    width: rem-calc(90);
+  }
+}

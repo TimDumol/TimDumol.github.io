@@ -91,7 +91,7 @@ $sidebar-bg: $secondary-bg;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(760);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
 
@@ -807,7 +807,7 @@ $info-color: #a0d3e8;
 // $include-html-magellan-classes: $include-html-classes;
 
 $magellan-bg: none;
-// $magellan-padding: 0 !important;
+$magellan-padding: 0 !important;
 
 // 18. Off-canvas
 // - - - - - - - - - - - - - - - - - - - - - - - - -

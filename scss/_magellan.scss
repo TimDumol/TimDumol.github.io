@@ -1,5 +1,6 @@
 [data-magellan-expedition] {
   min-width: 0;
+  width: rem-calc(130);
   @media #{$small-only} {
     &.fixed {
       display: none;
