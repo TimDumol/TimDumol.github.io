@@ -45,7 +45,7 @@
 
           // Account for expedition height if fixed position
           var scroll_top = target.offset().top - settings.destination_threshold + 1;
-          if (self.settings.offset_by_height) {
+          if (settings.offset_by_height) {
             scroll_top = scroll_top - expedition.outerHeight();
           }
 
@@ -155,7 +155,11 @@
         var name = $(this).data(self.data_attr('magellan-arrival')),
             dest = $('[' + self.add_namespace('data-magellan-destination') + '=' + name + ']');
         if (dest.length > 0) {
-          var top_offset = Math.floor(dest.offset().top - settings.destination_threshold - expedition.outerHeight());
+          var top_offset = dest.offset().top - settings.destination_threshold;
+          if (settings.offset_by_height) {
+            top_offset = top_offset - expedition.outerHeight();
+          }
+          top_offset = Math.floor(top_offset);
           return {
             destination : dest,
             arrival : $(this),
