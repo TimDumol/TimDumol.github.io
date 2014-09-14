@@ -1,3 +1,16 @@
+.personal-name {
+  font-size: 1.3rem;
+}
+
+.social-list {
+  margin: rem-calc(5) 0;
+  list-style-type: 0;
+  li {
+    display: inline-block;
+    margin-right: rem-calc(2);
+  }
+}
+
 .button.button--social {
   $size: rem-calc(32);
   $padding: rem-calc(5);
@@ -6,22 +19,17 @@
   height: $size;
   font-size: $shrunk;
   padding: $padding;
+  margin-bottom: 0.5rem;
 }
 
-.sidebar p {
+.sidebar {
   font-size: 0.8rem;
   line-height: 1.2;
 }
 
-.personal-info {
+.contact {
   font-size: 0.8rem;
   line-height: 1.2;
-  list-style-type: none;
-  margin: 0;
-
-  li {
-    margin-bottom: 0.5rem;
-  }
 }
 
 .self-photo {
