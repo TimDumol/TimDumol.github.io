@@ -11,18 +11,19 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="all-wrapper">
+    <div class="all-wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="gender" content="male" />
       <div class="row content-wrapper">
         <div class="medium-2 columns sidebar">
-          <img src="/img/tim-dumol-headshot.jpg" class="self-photo" alt="My photo">
-          <div class="personal-name">Tim Dumol</div>
+          <img src="/img/tim-dumol-headshot.jpg" class="self-photo" alt="My photo" itemprop="image">
+          <div class="personal-name"><span itemprop="givenName">Tim</span> <span itemprop="familyName">Dumol</span></div>
           <div>I love code, math, and algorithms.</div>
           <ul class="social-list">
             <li><a href="https://github.com/TimDumol/" target="_blank" class="button button--social"><i class="fa fa-github"></i></a></li>
             <li><a href="https://ph.linkedin.com/in/timdumol/" target="_blank" class="button button--social"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://twitter.com/timdumol" target="_blank" class="button button--social"><i class="fa fa-twitter"></i></a></li>
           </ul>
-          <div class="contact">Reach me at <a href="mailto:tim@timdumol.com">tim@timdumol.com</a></div>
+          <div class="contact">Reach me at <a href="mailto:tim@timdumol.com"><span itemprop="email">tim@timdumol.com</span></a></div>
           </ul>
           <div data-magellan-expedition="fixed">
             <ul class="side-nav">
@@ -96,8 +97,8 @@
               <h1 data-magellan-destination="experience"><i class="fa fa-suitcase"></i> Experience</h1>
               <ul class="activity-list">
                 <li>
-                  <div class="position primary-em">Chief Software Engineer</div>
-                  <div class="company secondary-em">Kalibrr Technology Ventures</div>
+                  <div class="position primary-em" itemprop="jobTitle">Chief Software Engineer</div>
+                  <div class="company secondary-em" itemprop="worksFor"><span itemprop="name">Kalibrr Technology Ventures</span></div>
                   <div class="date">2013 August&ndash;present</div>
                   <div class="desc">
                     <div>I work as a full-stack web developer at Kalibrr who also dabbles in operations and analytics, where I use a variety of technologies, including Ansible (previously Puppet) and Vagrant for automated deployment, Jenkins for CI, New Relic for monitoring, Guard for automated building, Pyramid (previously Rails) for the backend, AngularJS (using TypeScript) for the frontend, and ElasticSearch for full-text search. While working, I have:</div>
@@ -218,6 +219,7 @@
                   <div class="field">Algorithms and Data Analysis</div>
                   <div class="scope">Asia</div>
                   <div class="date">2014 August</div>
+                  <meta itemprop="award" content="1st place at Trend Micro Codinsanity, an Asia-wide competition in Algorithms and Data Analysis, on August 2014" />
                 </li>
                 <li>
                   <div class="contest primary-em">Imagine Cup (Games)</div>
@@ -225,6 +227,7 @@
                   <div class="field">Game Development</div>
                   <div class="scope">Philippines</div>
                   <div class="date">2014 January&ndash;April</div>
+                  <meta itemprop="award" content="National Finalist at the Microsoft Imagine Cup (Games) 2014" />
                 </li>
                 <li>
                   <div class="contest primary-em">4g25b Codejam</div>
@@ -232,6 +235,7 @@
                   <div class="field">Algorithms</div>
                   <div class="scope">Philippines</div>
                   <div class="date">2013 December</div>
+                  <meta itemprop="award" content="1st place at the 4g25b CodeJam 2013, a national competition in Algorithms and Data Analysis, on December 2013" />
                 </li>
                 <li>
                   <div class="contest primary-em">Trend Micro Big Data Innovation Contest</div>
@@ -239,6 +243,7 @@
                   <div class="field">Big Data and Machine Learning</div>
                   <div class="scope">Asia</div>
                   <div class="date">2013 May&ndash;August</div>
+                  <meta itemprop="award" content="1st place at Trend Big Data Innovation Contest 2013, a competition between China, Japan, Singapore, Taiwan, and the Philippines, in Big Data and Machine Learning, on May&ndash;August 2013" />
                 </li>
                 <li>
                   <div class="contest primary-em">AngelHack Manila</div>
@@ -246,6 +251,7 @@
                   <div class="field">Startups and Web Development</div>
                   <div class="scope">Philippines</div>
                   <div class="date">2013 June</div>
+                  <meta itemprop="award" content="Finalist at AngelHack Manila 2013">
                 </li>
                 <li>
                   <div class="contest primary-em">Manila Game Jam (Makati Site)</div>
@@ -253,6 +259,7 @@
                   <div class="field">Game Development</div>
                   <div class="scope">Philippines</div>
                   <div class="date">2013 January</div>
+                  <meta itemprop="award" content="Technical Excellence Award at the Manila Game Jam (Makati Site) 2013, a game jam with the goal of creating a game focused on a theme in 48 hours" />
                 </li>
                 <li>
                   <div class="contest primary-em">ACM ICPC Hanoi Regionals</div>
@@ -260,6 +267,7 @@
                   <div class="field">Algorithms</div>
                   <div class="scope">Southeast and East Asia</div>
                   <div class="date">2012 November</div>
+                  <meta itemprop="award" content="15th place at the ACM ICPC Hanoi Regionals 2012, an algorithmic programming contest open to Southeast and East Asia" />
                 </li>
                 <li>
                   <div class="contest primary-em">ACM ICPC Jakarta Regionals</div>
@@ -267,6 +275,7 @@
                   <div class="field">Algorithms</div>
                   <div class="scope">Southeast and East Asia</div>
                   <div class="date">2012 October</div>
+                  <meta itemprop="award" content="15th place at the ACM ICPC Jakarta Regionals 2012, an algorithmic programming contest open to Southeast and East Asia" />
                 </li>
                 <li>
                   <div class="contest primary-em">UP CURSOR Java Cup</div>
@@ -274,6 +283,7 @@
                   <div class="field">Algorithms</div>
                   <div class="scope">Metro Manila</div>
                   <div class="date">2012 February</div>
+                  <meta itemprop="award" content="3rd place at the UP CURSOR Java Cup 2012, an algorithmic programming contest open to universities in Metro Manila" />
                 </li>
                 <li>
                   <div class="contest primary-em">CompSat Inter-University Programming Competition</div>
@@ -281,6 +291,7 @@
                   <div class="field">Algorithms</div>
                   <div class="scope">Metro Manila</div>
                   <div class="date">2011 November</div>
+                  <meta itemprop="award" content="1st place at the CompSat Inter-University Programming Competition 2011, an algorithmic programming contest open to universities in Metro Manila" />
                 </li>
                 <li>
                   <div class="contest primary-em">UP CURSOR Java Cup</div>
@@ -288,6 +299,7 @@
                   <div class="field">Algorithms</div>
                   <div class="scope">Metro Manila</div>
                   <div class="date">2011 February</div>
+                  <meta itemprop="award" content="3rd place at the UP CURSOR Java Cup 2011, an algorithmic programming contest open to universities in Metro Manila" />
                 </li>
                 <li>
                   <div class="contest primary-em">CompSat Inter-University Programming Competition</div>
@@ -295,6 +307,7 @@
                   <div class="field">Algorithms</div>
                   <div class="scope">Metro Manila</div>
                   <div class="date">2010 November</div>
+                  <meta itemprop="award" content="3rd place at the CompSat Inter-University Programming Competition 2010, an algorithmic programming contest open to universities in Metro Manila" />
                 </li>
               </ul>
 
@@ -381,7 +394,7 @@
               <h1 data-magellan-destination="education"><i class="fa fa-graduation-cap"></i> Education</h1>
               
               <div class="panel">
-                <div class="institution primary-em">University of the Philippines Diliman</div>
+                <div class="institution primary-em" itemprop="alumniOf"><span itemprop="name">University of the Philippines Diliman</span></div>
                 <div class="degree secondary-em">Bachelor of Science in Mathematics 2014, <span class="latin-honors">magna cum laude</span></div>
                 <div class="extracurriculars">Member, and then secretary and trainer, of the <span class="organization">University of the Philippines Programming Guild (<span class="small-caps">UPPG</span>)</span> (2010&ndash;2013), an organization dedicated to training for and participating in programming contests.</div>
               </div>
