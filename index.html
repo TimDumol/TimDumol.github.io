@@ -1,15 +1,369 @@
-<!DOCTYPE html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tim Dumol</title><link rel="stylesheet" href="/src.910748c7.css"></head><body>
-<section class="hero is-dark"> <div class="hero-body"> <div class="container"> <div class="columns is-vcentered"> <div class="td-hero-left column is-one-quarter"> <div class="image is-1b1 td-me-photo"> <img class="is-rounded" alt="Photo of Tim Dumol" src="/tim-dumol-headshot.2d70b7c1.jpg"> </div> </div> <div class="column"> <h1 class="title">Hi. I'm Tim Dumol.</h1> <div class="content"> <p>I love solving problems using code, math, and algorithms. I am experienced in site reliability engineering, data engineering, algorithms and programming contests, and web development. I have won national and international contests in algorithms &amp; data science. I'm a geek at heart, and love to obsess over my hobbies: baking, board games, electronics, reading, and video games. </p> <p> Right below are a few highlights of my career. Want to see more? Check my <a href="https://www.linkedin.com/in/timdumol/" class="icon-with-word"><i class="fab fa-linkedin"></i> LinkedIn</a> and my <a href="https://github.com/TimDumol" class="icon-with-word"><i class="fab fa-github"></i> Github</a>. </p> </div> </div> </div> </div> </div>
-</section>
-<section class="hero is-light"> <div class="hero-body"> <div class="container"> <h1 class="title">Math &amp; Algorithms</h1> <div class="content"> <p></p> <ul> <li><a href="https://projecteuler.net/profile/timdumol.png">174 problems</a> (99.7<sup>th</sup> percentile worldwide) on <a href="https://projecteuler.net/">Project Euler</a>, a site where you can solve math problems that require programming to solve </li> <li><a href="http://uhunt.felix-halim.net/id/52978">636 problems solved</a> (99.8<sup>th</sup> percentile) on <a href="https://onlinejudge.org/">UVa Online Judge</a>, an online algorithmic programming contest practice site </li> <li>Placed in contests, national and international:</li> <ul> <li>1<sup>st</sup> place, 4g25b Codejam 2013 (Philippines)</li> <li>1<sup>st</sup> place, ACM ICPC Philippines March Invitational Contest 2013 (Philippines)</li> <li>1<sup>st</sup> place, CompSat Inter-University Programming Competition 2011 (Metro Manila, Philippines) </li> <li>3<sup>rd</sup> place, CompSat Inter-University Programming Competition 2011 (Metro Manila, Philippines) </li> <li>9<sup>th</sup> place, ACM ICPC Jakarta Regionals 2012 (Southeast and East Asia)</li> <li>15<sup>th</sup> place, ACM ICPC Hanoi Regionals 2012 (Southeast and East Asia)</li> </ul> <li> Helped found the National Olympiad in Informatics Philippines (NOI.PH) in 2014 and incorporate it in 2017. NOI.PH is the official PH qualifier for the International Olympiad in Informatics, the most prestigious international algorithmic programming contest at the high school level. NOI.PH trains the top competitors in advanced algorithms and data structures, and sends the top delegates to the IOI. Through our efforts, the PH team has received medals each year in the IOI. </li> </ul> </div> </div> </div>
-</section>
-<section class="hero is-dark"> <div class="hero-body"> <div class="container"> <h1 class="title">Data Engineering</h1> <div class="content"> <ul> <li>Spearheaded <a href="https://www.kalibrr.com">Kalibrr's</a> effort to ingest internal data sources into a central BigQuery data warehouse; reducing analysis time in certain use cases >100x from days to minutes </li> <li>Streamlined bringing ML models into production by creating a standard Connexion-based template and Helm chart, improving development velocity 6x from 1 released model per year to 1 per 2 months. </li> <li>Improved process of productionizing ML models by requiring (and creating tooling for) performance benchmarks, Swagger/OpenAPI templates, and automated Cloud Build-based tests. </li> <li>Improved observability of ML models by incorporating error reporting, distributed tracing (via Opencensus/Stackdriver Trace), and Prometheus metrics in the standard Connnexion-based template. </li> <li>Implemented cost control measures for BigQuery usage through a cost dashboard and automated cost alerts on a per-user basis </li> </ul> </div> </div> </div>
-</section>
-<section class="hero is-light"> <div class="hero-body"> <div class="container"> <h1 class="title">Site Reliability Engineering</h1> <div class="content"> <ul> <li>Led <a href="https://www.kalibrr.com">Kalibrr's</a> move from VPSes + Ansible to Kubernetes, giving us an immutable infrastructure with autoscaling, internal DNS, and blue-green deployment </li> <li>Reduced Kalibrr's GCP bill by 50% in a cost optimization project, mostly through benchmarking and right-sizing requests </li> <li>Enabled observability by setting up alerting & metrics via Prometheus & Grafana, distributed tracing via OpenCensus & Stackdriver Trace, and error reporting; decreasing Mean Time To Repair by making it easier to diagnose incidents rapidly, and making it easy to optimize hotspots by allowing deep dives into endpoint execution. </li> <li>Transitioned container building from Jenkins to Cloud Build, increasing reliability and parallelism for container builds. </li> </ul> </div> </div> </div>
-</section>
-<section class="hero is-dark"> <div class="hero-body"> <div class="container"> <h1 class="title">Data Science</h1> <div class="content"> <ul> <li>Won 1<sup>st</sup> place at Trend Micro Codinsanity 2014 (Asia) by using Latent Dirichlet Allocation to perform customer segmentation </li> <li>Won 2<sup>nd</sup> place at Trend Micro Big Data Innovation 2013 (Asia) with an Apache Storm-based tool to monitor brand sentiment bya analyzing Twitter streams </li> <li>Took online courses: 6.BDx Tackling the Challenges of Big Data (MIT Professional Education); Machine Learning (Coursera) </li> </ul> </div> </div> </div>
-</section>
-<section class="hero is-light"> <div class="hero-body"> <div class="container"> <h1 class="title">Web Development</h1> <div class="content"> <ul> <li>Migrated <a href="https://www.kalibrr.com">Kalibrr</a> codebase from Javascript to Typescript, fixing and preventing dozens of bugs on the way. </li> <li>Performed profiling and optimization on Kalibrr codebase, resulting in 10–1 000x performance improvements (mainly through query optimization and fixing O(n) query problems) </li> <li>Experienced in performant and secure frontend (Angular, SCSS, Bootstrap, Bulma) and backend (Flask, Pyramid, SQLAlchemy) web development </li> </ul> </div> </div> </div>
-</section>
-<script src="/src.219f3381.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Joseph Dumol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .resume-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .pipe-list {
+            gap: 0.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pipe-list li {
+            position: relative;
+            padding-right: 0.75rem;
+            margin-right: 0.25rem;
+            line-height: 1.2;
+        }
+
+        .pipe-list li:not(:last-child)::after {
+            content: "|";
+            color: #9ca3af;
+            /* Tailwind gray-400 */
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                background-color: #fff;
+                font-size: 10pt;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                border-radius: 0;
+                max-width: 100%;
+            }
+
+            a {
+                color: #000 !important;
+                text-decoration: none;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+    <div class="resume-container p-8 md:p-12">
+        <!-- Header Section -->
+        <header class="text-center border-b pb-6 mb-8 print:pb-2 print:mb-2">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 print:text-2xl print:mb-1">Tim Joseph Dumol</h1>
+            <h2 class="text-xl md:text-2xl text-blue-600 font-medium mt-2 print:text-base print:mt-0 print:mb-1">
+                Full-Stack Developer, SRE, Data Engineer</h2>
+            <div
+                class="flex justify-center flex-wrap gap-x-6 gap-y-2 mt-4 text-sm text-gray-600 print:mt-1 print:gap-x-2 print:text-xs">
+                <a href="mailto:tim@timdumol.com" class="hover:text-blue-600 print:no-underline">tim@timdumol.com</a>
+                <span>&bull;</span>
+                <span>Spain</span>
+            </div>
+            <div
+                class="flex justify-center flex-wrap gap-x-6 gap-y-2 mt-2 text-sm print:mt-1 print:gap-x-2 print:text-xs">
+                <a href="https://www.timdumol.com" target="_blank"
+                    class="text-blue-600 hover:underline print:no-underline">www.timdumol.com</a>
+                <span>&bull;</span>
+                <a href="https://www.linkedin.com/in/timdumol" target="_blank"
+                    class="text-blue-600 hover:underline print:no-underline">linkedin.com/in/timdumol</a>
+                <span>&bull;</span>
+                <a href="https://github.com/TimDumol" target="_blank"
+                    class="text-blue-600 hover:underline print:no-underline">github.com/TimDumol</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- Page 1 Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-x-12">
+                <!-- Left Column (Page 1) -->
+                <div class="md:col-span-2 print:col-span-2">
+                    <section>
+                        <h3 class="text-2xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">Summary</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            A performance-driven engineer with extensive experience in
+                            <span class="font-semibold text-gray-800">Site Reliability Engineering (SRE)</span>,
+                            <span class="font-semibold text-gray-800">Data Engineering</span>,
+                            web development, and productionization of
+                            <span class="font-semibold text-gray-800">AI/LLM features</span>.
+                            I leverage a deep background in
+                            <span class="font-semibold text-gray-800">mathematics</span> and
+                            <span class="font-semibold text-gray-800">competitive programming</span>
+                            (won national and international contests in
+                            algorithms &amp; data science)
+                            to design and implement
+                            <span class="font-semibold text-gray-800">robust, scalable, and highly efficient
+                                systems</span>.
+                            I thrive on solving
+                            <span class="font-semibold text-gray-800">complex problems within their business
+                                context</span>,
+                            ensuring technical solutions are
+                            <span class="font-semibold text-gray-800">pragmatic, secure, and aligned with strategic
+                                goals</span>. I have extensive experience mentoring engineers in SRE, AI, and
+                            algorithms, and
+                            <span class="font-semibold text-gray-800">co-founded the Philippines' national informatics
+                                olympiad</span>.
+                        </p>
+                        </p>
+                    </section>
+
+                    <section class="mt-8 print:mt-2">
+                        <h3 class="text-2xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">Experience
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="job-entry">
+                                <h4 class="text-lg font-semibold text-gray-800">
+                                    Principal Software Engineer
+                                    <span class="text-gray-600 font-normal text-sm ml-1 print:block print:ml-0">Expedock
+                                        | Dec 2023
+                                        -
+                                        Present</span>
+                                </h4>
+                                <h4 class="text-lg font-semibold text-gray-800 mt-1">
+                                    Founding Engineer
+                                    <span class="text-gray-600 font-normal text-sm ml-1 print:block print:ml-0">Expedock
+                                        | May 2020 - Dec
+                                        2023</span>
+                                </h4>
+                                <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                                    <li>Led and mentored an engineering team while actively contributing code across the
+                                        stack.</li>
+                                    <li>Re-engineered a bottlenecked Python microservice in Rust, fixing availability
+                                        issues
+                                        and enabling processing of ~1k requests/second.</li>
+                                    <li>Led cloud cost optimization, saving over $4,000 per month through database and
+                                        infrastructure improvements.</li>
+                                    <li>Improved performance and cost-efficiency of AI features by measuring actual
+                                        business
+                                        impact instead of vanity metrics.</li>
+                                    <li>Set up automated sales call transcription and tagging via LLMs to help monitor
+                                        and
+                                        improve sales performance.</li>
+                                    <li>Integrated CI/CD, analytics tools (Posthog), and observability systems
+                                        (Prometheus,
+                                        Grafana).</li>
+                                    <li>Trained engineers in applications and limitations of AI - how to best leverage
+                                        AI in their daily workflow while understanding its limitations due to its
+                                        mathematical foundations, as well as how to integrate AI in applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Right Column (Page 1) -->
+                <div class="md:col-span-1 print:col-span-1 mt-8 md:mt-0 print:mt-0">
+                    <section>
+                        <h3 class="text-xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">
+                            Skills
+                        </h3>
+                        <ul class="flex flex-wrap text-sm text-gray-800 print:text-xs pipe-list">
+                            <li>Python</li>
+                            <li>TypeScript</li>
+                            <li>Kubernetes (GKE and EKS)</li>
+                            <li>AWS</li>
+                            <li>GCP</li>
+                            <li>Snowflake</li>
+                            <li>PostgreSQL</li>
+                            <li>React</li>
+                            <li>GraphQL</li>
+                        </ul>
+
+                    </section>
+                    <section class="mt-8">
+                        <h3 class="text-xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">Projects</h3>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Strawberry SQLAlchemy</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed">Created and open-sourced an integration for
+                                strawberry-graphql with SQLAlchemy for automatic efficient loading of relationships,
+                                without
+                                N+1 query issues.</p>
+                        </div>
+                    </section>
+                    <section class="mt-8">
+                        <h3 class="text-xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">Volunteering
+                        </h3>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Corporate Secretary & Treasurer</h4>
+                            <p class="text-gray-600 text-sm">National Olympiad in Informatics - Philippines</p>
+                            <p class="text-gray-500 text-xs">2017 - 2020</p>
+                            <p class="text-gray-700 text-sm leading-relaxed mt-1">Co-founded the Philippines' national
+                                qualifier for the International Olympiad in Informatics. Coordinated the scientific
+                                committee, wrote contest problems, and trained delegates in algorithms and data
+                                structures.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Page Break for printing -->
+            <div class="page-break mt-2"></div>
+
+            <!-- Page 2 Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-x-12">
+                <!-- Left Column (Page 2) -->
+                <div class="md:col-span-2 print:col-span-2">
+                    <div class="space-y-2">
+                        <div class="job-entry">
+                            <h4 class="text-lg font-semibold text-gray-800">
+                                Data Infrastructure Engineering Lead
+                                <span class="text-gray-600 font-normal text-sm ml-1 print:block print:ml-0">Kalibrr |
+                                    Jun 2019 - Jun
+                                    2020</span>
+                            </h4>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                                <li>Created the Data Infrastructure team to maximize AI team productivity and enable
+                                    data
+                                    access
+                                    for stakeholders.</li>
+                                <li>Spearheaded ingestion of internal data into a BigQuery data warehouse, reducing
+                                    analysis
+                                    time in some cases from days to minutes (>100x improvement).</li>
+                                <li>Streamlined ML model productionization with a standard spec-first template and
+                                    Helm
+                                    chart, improving ML development velocity 6x (from 1 model/year to 1/two months).
+                                </li>
+                                <li>Improved observability of ML models by incorporating error reporting, distributed
+                                    tracing,
+                                    and Prometheus metrics into the standard template.</li>
+                            </ul>
+                        </div>
+                        <div class="job-entry">
+                            <h4 class="text-lg font-semibold text-gray-800">
+                                Site Reliability Engineering Lead
+                                <span class="text-gray-600 font-normal text-sm ml-1 print:block print:ml-0">Kalibrr |
+                                    Sep 2017 - Jun
+                                    2019</span>
+                            </h4>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                                <li>Led migration to Kubernetes from VPSes, enabling autoscaling and reducing new
+                                    instance
+                                    provision time from hours to minutes.</li>
+                                <li>Set-up and managed a self-hosted PostgreSQL cluster (with daily backups and PITR),
+                                    saving $1,500/mo over GCP-managed.</li>
+                                <li>Introduced SRE principles and started the SRE team, and trained the SRE team using
+                                    codelabs and scenario simulations.</li>
+                                <li>Optimized various endpoints by up to 1000x via Python and PostgreSQL profiling.</li>
+                                <li>Reduced GCP bill by 50% through a focused cost optimization project.</li>
+                            </ul>
+                        </div>
+                        <div class="job-entry">
+                            <h4 class="text-lg font-semibold text-gray-800">
+                                Chief Software Engineer
+                                <span class="text-gray-600 font-normal text-sm ml-1 print:block print:ml-0">Kalibrr |
+                                    Aug 2013 - Sep
+                                    2017</span>
+                            </h4>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                                <li>Built and maintained core features across the stack, focusing on reliability and
+                                    clear analytics.</li>
+                                <li>Set-up CI/CD for rapid deployment and testing.</li>
+                                <li>Set up monitoring and alerting to quickly catch and resolve issues, improving
+                                    uptime.</li>
+                                <li>Improved candidate matching by setting up observability for performance and
+                                    accuracy, and iterating based on those metrics.</li>
+                                <li>Oversaw architectural decisions, provided technical leadership, and ensured the
+                                    platform's reliability, stability, and performance.</li>
+                            </ul>
+                        </div>
+                        <div class="job-entry">
+                            <h4 class="text-lg font-semibold text-gray-800">
+                                Developer
+                                <span class="text-gray-600 font-normal text-sm ml-1 print:block print:ml-0">Sage Open
+                                    Source Mathematics
+                                    Software | 2009 - 2011</span>
+                            </h4>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                                <li>Contributed to the Sage Notebook web UI (notebook-based UI for Python before
+                                    Jupyter/IPython Notebook)
+                                    for the open-source SageMath project.</li>
+                                <li>Worked on migrating the old architecture to an independent package, including
+                                    numerous
+                                    bug
+                                    fixes and template migrations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column (Page 2) -->
+                <div class="md:col-span-1 print:col-span-1 mt-8 md:mt-0 print:mt-0">
+                    <section>
+                        <h3 class="text-xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">Honors &
+                            Awards
+                        </h3>
+                        <div class="space-y-3 text-gray-700 text-sm">
+                            <div>
+                                <span class="font-semibold">1st place</span>, Trend Micro Codinsanity 2014<br>
+                                <span class="text-gray-500 text-xs pl-0 block">Data Science (Latent Dirichlet
+                                    Allocation, Customer Segmentation)</span>
+                            </div>
+                            <div>
+                                <span class="font-semibold">Technical Excellence</span>, Manila Game Jam 2013<br>
+                                <span class="text-gray-500 text-xs pl-0 block">Game Development</span>
+                            </div>
+                            <div>
+                                <span class="font-semibold">Bronze prize</span>, ACM ICPC Asia-Hanoi Regionals
+                                2012<br>
+                                <span class="text-gray-500 text-xs pl-0 block">Competitive Programming</span>
+                            </div>
+                            <div>
+                                <span class="font-semibold">1st place</span>, ACM ICPC Philippines Invitational
+                                2013<br>
+                                <span class="text-gray-500 text-xs pl-0 block">Competitive Programming</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mt-8">
+                        <h3 class="text-2xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">Languages
+                        </h3>
+                        <ul class="flex flex-wrap text-sm text-gray-800 print:text-xs pipe-list">
+                            <li>English (Native)</li>
+                            <li>Filipino (Native)</li>
+                            <li>Spanish (A2, Studying)</li>
+                        </ul>
+                    </section>
+
+                    <section class="mt-8">
+                        <h3 class="text-2xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-4">Education
+                        </h3>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800">Bachelor of Science, Mathematics
+                                (<em>magna
+                                    cum
+                                    laude</em>)</h4>
+                            <p class="text-md text-gray-600">University of the Philippines Diliman <span
+                                    class="text-gray-400">|</span> 2010 - 2014</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
+</html>
